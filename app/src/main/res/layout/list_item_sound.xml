@@ -1,0 +1,22 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.bignerdranch.android.beatbox.SoundViewModel"/>
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <Button
+        android:id="@+id/sound_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        tools:text="Sound name"
+        android:text="@{viewModel.title}"/>
+    </FrameLayout>
+
+</layout>
